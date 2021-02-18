@@ -13,7 +13,7 @@ p {
   padding: 0;
 }
 body {
-  font-family: "Gasalt", Arial, Helvetica, sans-serif;
+  font-family: "Gasalt", "Work Sans", "Open Sans", "Helvetica Neue", sans-serif;
 }
 ul,
 li {
@@ -367,11 +367,14 @@ a {
 /* CONTATO - MAIN */
 .contact-main {
   padding: 60px;
-  background: linear-gradient(
-    92.5deg,
-    rgba(82, 163, 204, 0.8) 0.24%,
-    rgba(175, 225, 250, 0.8) 100%
-  );
+  background: url("../img/bg-form.png") no-repeat center,
+    linear-gradient(
+      92.5deg,
+      rgba(82, 163, 204, 0.8) 0.25%,
+      rgba(175, 225, 250, 0.8) 100%
+    );
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -505,178 +508,3 @@ a {
     font-size: 1.25em;
   }
 }
-
-/* CONTATO
-.contact-intro {
-  padding: 160px 0;
-  background: linear-gradient(rgba(82, 163, 204, 1), rgba(136, 204, 238, 0.3)),
-    url("../img/bg-contact.jpg") no-repeat center;
-  background-size: cover;
-  background-attachment: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (max-width: 768px) {
-  .contact-intro {
-    padding: 120px 0;
-  }
-  .contact-intro p {
-    max-width: 450px;
-  }
-}
-
-/* FORMULÁRIO - CONTATO */
-/*.contact {
-  padding: 60px;
-}
-
-.contact h1 {
-  font-size: 3em;
-  font-weight: bold;
-  color: #64647a;
-}
-
-.contact h1::after {
-  content: "";
-  display: block;
-  width: 90px;
-  height: 3px;
-  background: #64647a;
-}
-
-.contact > p {
-  margin-top: 30px;
-  font-size: 1.5em;
-  line-height: 1.5;
-  letter-spacing: 0.1em;
-  font-weight: bold;
-}
-
-.contact-form {
-  background: url("../img/bg-form.png") no-repeat center;
-  background-size: auto;
-  background-attachment: fixed;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 30px 0;
-}
-
-.contact-form form {
-  width: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin-right: 50px;
-}
-
-.contact-form form label {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #323232;
-}
-
-.contact-form form input {
-  padding: 5px;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 1.125em;
-  letter-spacing: 0.1em;
-  color: #64647a;
-  border: transparent;
-  background: transparent;
-  border-bottom: 2px solid #c4c4c4;
-  margin: 5px 0 10px 0;
-}
-
-.contact-form form textarea {
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-  font-size: 1.125em;
-  letter-spacing: 0.1em;
-  color: #64647a;
-  background: transparent;
-  border: 2px solid #c4c4c4;
-  border-radius: 5px;
-}
-
-.contact-form form input:focus,
-.contact-form form textarea:focus {
-  outline: none;
-}
-
-.contact-form form button {
-  align-self: flex-start;
-  font-family: "Gasalt", Arial, Helvetica, sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
-  margin: 10px 0;
-  padding: 10px 30px;
-  color: #fff;
-  background: #23d97e;
-  border: none;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.contact-form form button:hover {
-  background: #12b463;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.2);
-  transition: 300ms ease-in-out;
-}
-
-/*.contact-data {
-  align-self: flex-start;
-  margin-left: 50px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.contact-data p {
-  font-size: 1.5em;
-  font-weight: bold;
-  line-height: 1.5;
-  color: #323232;
-}
-
-.contact-data a {
-  display: flex;
-  align-self: flex-start;
-  padding: 10px;
-  margin: 10px 0;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #fff;
-  background: #23d97e;
-  border-radius: 5px;
-  text-align: center;
-}
-
-.contact-data a:hover {
-  background: #12b463;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: 300ms ease-in-out;
-}
-
-.contact-form a img {
-  max-width: 20px;
-  display: inline;
-  margin-right: 10px;
-}
-
-@media (max-width: 569px) {
-  .contact h1 {
-    font-size: 2.25em;
-  }
-  .contact h1::after {
-    width: 45px;
-  }
-  .contact-form form {
-    width: 100%;
-  }
-  .contact-data {
-    margin: 20px 0 0 0;
-  }
-} */
