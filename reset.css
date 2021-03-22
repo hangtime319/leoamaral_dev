@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+nav,
+ul,
+li,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 1rem;
+  font-family: "Gasalt", "Work Sans", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
