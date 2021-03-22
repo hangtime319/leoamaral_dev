@@ -11,17 +11,23 @@
 </head>
 
 <body>
-  <header class="header-bg">
+  <header class="header">
     <!-- LOGO -->
-    <a href="#"><img src="img/logo-oficial.png" alt="Logo Oficial Leonardo Amaral"></a>
+    <a href="index.html" class="logo"><img src="img/logo-oficial.png" alt="Logo Oficial Leonardo Amaral" id="logo-responsivo"></a>
 
     <!-- MENU -->
-    <nav class="header-menu js-menu">
-      <ul>
+    <nav class="header-menu" data-anime="menu">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="list" id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="#servicos">Serviços</a></li>
         <li><a href="#sobre">Sobre</a></li>
-        <!-- <li><a href="#portfolio">Portfólio</a></li> -->
+        <!-- <li data-dropdown>
+          <a href="portfolio.html">Portfólio</a>
+          <ul>
+            <li><a href="barbearia.html">Barbearia</a></li>
+          </ul>
+        </li> -->
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
@@ -29,20 +35,20 @@
 
   <main>
     <!-- INTRODUÇÃO -->
-    <section class="intro js-scroll">
+    <section class="intro" data-content="scroll">
       <h1>LEONARDO AMARAL</h1>
-      <p>Desenvolvedor front-end e</br> web designer</p>
+      <p data-text></p>
     </section>
 
     <!-- SERVIÇOS -->
-    <section class="service js-scroll" id="servicos">
+    <section class="service" data-content="scroll" id="servicos">
       <h1>O que faço</h1>
 
       <div class="service-list">
         <article class="service-item">
           <img src="img/icon/layout.svg" alt="Layout">
           <h2>Layout</h2>
-          <p>O layout do seu site será do jeito que você imagina, E com técnicas de interface e experiência do usuário.</p>
+          <p>O layout do site será do jeito que você imagina com técnicas de interface e experiência do usuário.</p>
         </article>
 
         <article class="service-item">
@@ -68,11 +74,11 @@
     </section>
 
     <!-- SOBRE -->
-    <section class="about js-scroll" id="sobre">
+    <section class="about" data-content="scroll" id="sobre">
       <img src="img/foto-perfil.jpg" alt="Leonardo Amaral">
       <div class="about-info">
         <h1>Sobre mim</h1>
-        <p>Tenho 34 anos, formado em Sistema de Informação pela Estácio de Sá desde 2016 e apaixonado pela tecnologia desde criança. Estou sempre me atualizando com cursos e eventos, principalmente da área de web. Faço conteúdo web sobre programação web no Instagram. Me segue lá também!</p>
+        <p>Tenho 35 anos, formado em Sistema de Informação pela Estácio de Sá desde 2016 e apaixonado pela tecnologia desde criança. Estou sempre me atualizando com cursos e eventos, principalmente da área de web. Faço conteúdo web sobre programação web no Instagram. Me segue lá também!</p>
 
         <a href="http://www.instagram.com/leoamaral.dev/" target="_blank">
           <p>@leoamaral_dev</p>
@@ -80,16 +86,10 @@
       </div>
     </section>
 
-    <!-- CALL-TO-ACTION -->
-    <!-- <section class="cta">
-      <h2>Quer ter um site e começar a promover o seu negócio na internet?</h2>
-      <a href="contato.html">FALE COMIGO</a>
-    </section> -->
-
     <!-- CONTATO -->
-    <section class="contact-main js-scroll" id="contato">
+    <section class="contact-main" data-content="scroll" id="contato">
       <h1>Contato</h1>
-      <p>O site ainda é o maior cartao de visitas que você pode dar ao seu cliente na internet.</br> Além disso, dá mais credibilidade e torna o seu negócio ainda mais profissional.</p>
+      <p>O site ainda é o maior cartão de visitas que você pode dar ao seu cliente na internet.</br> Além disso, dá mais credibilidade e torna o seu negócio ainda mais profissional.</p>
 
       <p>Obs: orçamento é feito com base nas exigências do projeto.</p>
 
@@ -101,8 +101,6 @@
         <a href="https://t.me/leoamaral_dev" target="_blank"><img src="img/icon/telegram-icon-1.svg" alt="Telegram Leonardo Amaral">Telegram</a>
       </div>
     </section>
-
-
   </main>
 
   <footer>
@@ -113,7 +111,7 @@
         <a href="https://www.facebook.com/leoamaraldev" target="_blank"><img src="img/icon/facebook.svg" alt="Facebook"></a>
         <a href="https://www.instagram.com/leoamaral_dev/" target="_blank"><img src="img/icon/instagram.svg" alt="Instagram"></a>
         <a href="https://github.com/hangtime319" target="_blank"><img src="img/icon/github-icon.svg" alt="Github"></a>
-        <a href="https://www.linkedin.com/leo-amaral-brito/" target="_blank"><img src="img/icon/linkedin.svg" alt="Linkedin"></a>
+        <a href="https://www.linkedin.com/in/leo-amaral-brito/" target="_blank"><img src="img/icon/linkedin.svg" alt="Linkedin"></a>
       </div>
     </div>
 
@@ -124,7 +122,7 @@
   </footer>
 
   <!-- JAVASCRIPT -->
-  <script src="js/script.js"></script>
+  <script type="module" src="js/script.js" defer></script>
 </body>
 
 </html>
